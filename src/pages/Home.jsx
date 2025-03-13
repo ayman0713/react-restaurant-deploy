@@ -4,7 +4,7 @@ import burgerImage from "/src/assets/burger-image.jpg";
 
 const Home = () => {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-gray-800 to-yellow-900 text-white">
       <div className="flex flex-col md:flex-row items-center justify-center px-10 md:px-20 py-12">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
