@@ -36,7 +36,11 @@ const Navbar = () => {
       </ul>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-6 md:hidden">
+        <div
+  className={`absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-6 md:hidden transition-all duration-300 ${
+    isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+  }`}
+>
           <Link to="/menu" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Menu</Link>
           <Link to="/services" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Services</Link>
           <Link to="/about" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>About Us</Link>
